@@ -3,7 +3,7 @@ require('database.php');
 
 $itemnum = filter_input(INPUT_POST, 'itemnum', FILTER_VALIDATE_INT);
 
-if ($id) {
+if ($itemnum) {
     $query = 'DELETE FROM todoitems
                 WHERE ItemNum = :itemnum';
     $statement = $db->prepare($query);

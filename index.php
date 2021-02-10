@@ -7,7 +7,7 @@
 
 <?php
         $query = 'SELECT * FROM todoitems
-                        ORDER BY ItemNum DESC';
+                        ORDER BY ItemNum ASC';
         $statement = $db->prepare($query);
         $statement->bindValue(':title', $title);
         $statement->bindValue(':description', $description);
@@ -43,7 +43,7 @@
                         <td><?php echo $title; ?></td>
                         <td><?php echo $description; ?></td>
                         <td><form action="delete_record.php" method="POST">
-                            <input type="hidden" name="itennum" value="<?php echo $itemnum ?>">
+                            <input type="hidden" name="itemnum" value="<?php echo $itemnum ?>">
                             <button class="delete">Delete</button>
                         </form></td>
                     </tr>
