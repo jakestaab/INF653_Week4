@@ -29,12 +29,13 @@
 
         <?php if(!empty($results)) { ?>
             <section>
+                <table>
+                    <tr></tr>
                     <?php foreach($results as $result) {
                         $itemnum = $result['ItemNum'];
                         $title = $result['Title'];
                         $description = $result['Description'];
                     ?>
-                <table>
                     <tr>
                         <td><span class="title"><?php echo $title; ?></span>
                             <div><?php echo $description; ?></div></td>
@@ -43,23 +44,25 @@
                             <button class="delete">&#10006</button>
                         </form></td>
                     </tr>
+                    <?php } ?>
                 </table>
-            <?php } ?>
             </section>
         <?php } else { ?>
             <p>There are no items on the ToDo List.</p>
         <?php } ?>
 
         <section>
-            <h2>ADD ITEM</h2>
+            <div class="additem">
             <form action="add_record.php" method="POST">
+                <label>Add Item</label>
                 <input type="hidden" name="itemnum" value="<?php echo $itemnum ?>">
-                <label for="title">Title:</label>
-                <input type="text" id="title" name="title" required>
-                <label for="description">Description:</label>
-                <input type="text" id="description" name="description" required>
-                <button>Add Item</button>
+                <div>
+                    <input type="text" id="title" name="title" placeholder="Title" required><br>
+                    <input type="text" id="description" name="description" placeholder="Description" required>
+                </div>
+                <button class="add">Add Item</button>
             </form>
+            </div>
         </section>
 
     </main>

@@ -1,5 +1,7 @@
 
-
+main {
+    font-family: arial;
+}
 h1 {
     background-color: pink;
     color: blue;
@@ -8,7 +10,16 @@ h1 {
 
 .delete {
     font-style: bold;
+    font-size: 125%;
     color: red;
+    padding: 6px;
+    border: none;
+    background: none;
+}
+
+.add {
+    background-color: rgb(66, 97, 201);
+    color: white;
 }
 
 .title {
@@ -24,10 +35,13 @@ table {
     table-layout: fixed;
     width: 75%;
     border: 1px solid black;
+    border-collapse: collapse;
 }
 
 tr {
     width: 55%;
+    border: solid;
+    border-width: 1px 0;
 }
 
 td {
@@ -37,4 +51,8 @@ td {
 table td:first-child {
     width: 90%;
     text-align: left;
+}
+
+.additem {
+    padding-top: 30px;
 }
