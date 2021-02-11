@@ -23,14 +23,11 @@
 </head>
 <body>
     <main>
-        <header>
-            <h1>ToDo List</h1>
-        </header>
 
         <?php if(!empty($results)) { ?>
             <section>
                 <table>
-                    <tr></tr>
+                    <tr><div class="listlabel">ToDo List</div></tr>
                     <?php foreach($results as $result) {
                         $itemnum = $result['ItemNum'];
                         $title = $result['Title'];
@@ -54,11 +51,11 @@
         <section>
             <div class="additem">
             <form action="add_record.php" method="POST">
-                <label>Add Item</label>
+                <label><div class="addlabel">Add Item</div></label>
                 <input type="hidden" name="itemnum" value="<?php echo $itemnum ?>">
                 <div>
-                    <input type="text" id="title" name="title" placeholder="Title" required><br>
-                    <input type="text" id="description" name="description" placeholder="Description" required>
+                    <input type="text" id="newitems" name="title" placeholder="Title" required><br>
+                    <input type="text" id="newitems" name="description" placeholder="Description" required>
                 </div>
                 <button class="add">Add Item</button>
             </form>

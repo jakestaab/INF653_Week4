@@ -2,11 +2,6 @@
 main {
     font-family: arial;
 }
-h1 {
-    background-color: pink;
-    color: blue;
-}
-
 
 .delete {
     font-style: bold;
@@ -18,8 +13,9 @@ h1 {
 }
 
 .add {
-    background-color: rgb(66, 97, 201);
+    background-color: rgb(44, 52, 168);
     color: white;
+    height: 50px;
 }
 
 .title {
@@ -46,6 +42,9 @@ tr {
 
 td {
     text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 4px;
 }
 
 table td:first-child {
@@ -55,4 +54,21 @@ table td:first-child {
 
 .additem {
     padding-top: 30px;
+}
+
+.listlabel {
+    color: rgb(44, 52, 168);
+    font-weight: bold;
+    font-size: 175%;
+}
+
+.addlabel {
+    color: rgb(177, 97, 32);
+    font-weight: bold;
+    font-size: 150%;
+}
+
+#newitems {
+    height: 30px;
+    width: 74%;
 }
