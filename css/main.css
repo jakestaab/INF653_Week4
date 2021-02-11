@@ -1,0 +1,40 @@
+
+
+h1 {
+    background-color: pink;
+    color: blue;
+}
+
+
+.delete {
+    font-style: bold;
+    color: red;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 115%;
+}
+
+.desc {
+    color: grey;
+}
+
+table {
+    table-layout: fixed;
+    width: 75%;
+    border: 1px solid black;
+}
+
+tr {
+    width: 55%;
+}
+
+td {
+    text-align: right;
+}
+
+table td:first-child {
+    width: 90%;
+    text-align: left;
+}
