@@ -71,4 +71,5 @@ table td:first-child {
 #newitems {
     height: 30px;
     width: 74%;
+    margin-bottom: 10px;
 }
